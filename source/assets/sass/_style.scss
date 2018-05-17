@@ -1,0 +1,111 @@
+.navbar {margin-bottom: 0;}
+.navbar-inverse .navbar-nav > li >a:hover,
+.navbar-inverse .navbar-nav>.active>a,
+.navbar-inverse .navbar-nav>li>a:focus {
+  background-color: #fbf0f036;
+}
+.navbar-inverse .navbar-brand {
+    color: #fff;
+}
+
+/*main title*/
+.m-title {
+  font: {
+    family: Kavivanar;
+    weight: bold;
+    size: 48px;
+  };
+}
+
+/*img*/
+img.img-circle:hover {transform: rotate(360deg);}
+
+img.img-circle {
+    transition: transform 1s;
+}
+
+.who {
+  position: relative;
+  width: auto;
+  height: auto;
+  padding: 70px 0;
+  text-align: center;
+  background: url(/assets/images/bg-head.jpg) repeat;
+}
+.about {
+    width:  50%;
+    height:  auto;
+    margin:  0 auto;
+    font-size: 20px;
+    @include respond-to(480) {font-size: 16px;}
+}
+.skill {
+  position: relative;
+  padding: 0 0 30px;
+  text-align: center;
+  background: #e4eaed;
+  &-type {
+    position:  relative;
+    width:  70%;
+    margin: 0 auto;
+    text-align: right;
+    @include respond-to(860) {
+      width: 90%;
+      //text-align: left;
+    }
+    @include respond-to(520) {
+      width: 100%;
+      //text-align: left;
+    }
+    @include respond-to(480) {
+      text-align: left;
+    }
+  }
+}
+.i-title {
+  font-size: 38px;
+  font-weight: 500;
+  text-align: center;
+  text-transform: uppercase;
+  color: #878ee6;
+}
+
+/*exp*/
+.exp {
+  position: relative;
+  display: block;
+  padding: 0 0 30px;
+  text-align: center;
+  background-color: #cddede;
+  &-co {
+    border-left: 1px dotted #ccc;
+    &-pro {
+      text-align: left;
+    }
+  }
+}
+
+/*contact*/
+.social {
+  position: relative;
+  display: block;
+  padding: 0 0 30px;
+  background-color: #333333;
+  &-link {
+    &-ul {
+      display: block;
+      margin: 0 auto;
+      text-align: center;
+    }
+  }
+}
+.icon1 {
+  width: 100px;
+}
+
+/*smartphone*/
+@include respond-to(480) {
+  .sp-col {
+    width: 100%;
+   }
+}
